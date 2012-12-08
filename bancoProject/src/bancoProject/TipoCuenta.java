@@ -1,6 +1,6 @@
 /*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+ * Esta clase sirve para instanciar objetos tipocuenta asociados a una cuentabancaria
+ * 
  */
 package bancoProject;
 
