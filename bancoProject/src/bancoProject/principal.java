@@ -79,7 +79,7 @@ public class principal {
     }
 private void principal_reporte() throws IOException {
 
-        ArrayList coleccion_clientes = new ArrayList();
+        ArrayList coleccion = new ArrayList();
         int opcion;
 
         do {
@@ -105,10 +105,10 @@ private void principal_reporte() throws IOException {
                 case 0:
                     break;
                 case 1:
-                    insertar_cliente(coleccion_clientes);
+                    consulta_usuario(coleccion);
                     break;
                 case 2:
-                    //consultar(coleccion);
+                   consulta_cuenta(coleccion);
                     break;
                 case 3:
                     //listar(coleccion);
@@ -134,5 +134,11 @@ private void principal_reporte() throws IOException {
 
     private void insertar_tipoc(ArrayList coleccion_tipoc) throws IOException {
         coleccion_tipoc.add(TipoCuenta.addTipoCuenta());
+    }
+    private void consulta_usuario(ArrayList coleccion) throws IOException {
+       
+    }
+    private void consulta_cuenta(ArrayList coleccion) throws IOException {
+       
     }
 }
