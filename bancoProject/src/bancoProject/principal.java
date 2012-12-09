@@ -22,6 +22,7 @@ public class principal {
     public principal() throws IOException {
 
         ArrayList coleccion_clientes = new ArrayList();
+        ArrayList coleccion_tipoc = new ArrayList();
         int opcion;
 
         do {
@@ -49,7 +50,7 @@ public class principal {
                     insertar_cliente(coleccion_clientes);
                     break;
                 case 2:
-                    //consultar(coleccion);
+                    insertar_tipoc(coleccion_tipoc);
                     break;
                 case 3:
                     //listar(coleccion);
@@ -129,5 +130,9 @@ private void principal_reporte() throws IOException {
 
     private void insertar_cliente(ArrayList coleccion_clientes) throws IOException {
         coleccion_clientes.add(Cliente.createCliente());
+    }
+
+    private void insertar_tipoc(ArrayList coleccion_tipoc) throws IOException {
+        coleccion_tipoc.add(TipoCuenta.addTipoCuenta());
     }
 }
