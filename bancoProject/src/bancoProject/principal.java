@@ -80,6 +80,7 @@ public class principal {
 private void principal_reporte() throws IOException {
 
         ArrayList coleccion = new ArrayList();
+        ArrayList coleccion_tipoc = new ArrayList();
         int opcion;
 
         do {
@@ -108,7 +109,7 @@ private void principal_reporte() throws IOException {
                     consulta_usuario(coleccion);
                     break;
                 case 2:
-                   consulta_cuenta(coleccion);
+                   consulta_cuenta(coleccion_tipoc);
                     break;
                 case 3:
                     listado_usuario(coleccion);
@@ -138,8 +139,13 @@ private void principal_reporte() throws IOException {
     private void consulta_usuario(ArrayList coleccion) throws IOException {
        
     }
-    private void consulta_cuenta(ArrayList coleccion) throws IOException {
-       
+    private void consulta_cuenta(ArrayList coleccion_tipoc) throws IOException {
+        TipoCuenta tipocuenta;
+        System.out.println("*** CONSULTA DE CUENTA ***");
+        for (int i = 0; i < coleccion_tipoc.size(); i++) {
+            tipocuenta = ((TipoCuenta) coleccion_tipoc.get(i));
+            System.out.println("CODIGO "+ tipocuenta.getidTipocuenta() +"DESCRIPCIÓN " + tipocuenta.getDescripcion() );
+        }
     }
 private void listado_usuario(ArrayList coleccion) throws IOException {
        
