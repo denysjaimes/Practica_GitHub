@@ -33,7 +33,7 @@ public class principal {
             System.out.println("3. CREAR TIPO DE OPERACION");
             System.out.println("4. ABRIR CUENTA");
             System.out.println("5. OPERACIONES");
-            System.out.println("6. REPORTES");
+            System.out.println("6. REPORTES/LISTADO");
             System.out.println("0. SALIR");
             try {
                 opcion = Integer.parseInt(entrada.readLine());
