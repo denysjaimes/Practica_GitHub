@@ -6,50 +6,50 @@ package bancoProject;
  */
 public class Cliente {
 
-    private long _idCliente;
+    private long idCliente;
 
     /**
-     * Obtiene el valor de _idCliente
+     * Obtiene el valor de idCliente
      *
-     * @return El valor que contiene _idCliente
+     * @return El valor que contiene idCliente
      */
     public long getIdCliente() {
-        return _idCliente;
+        return idCliente;
     }
 
     /**
-     * Establece el valor de _idCliente
+     * Establece el valor de idCliente
      *
-     * @param _idCliente nuevo valor para _idCliente
+     * @param idCliente nuevo valor para idCliente
      */
     public void setIdCliente(long _idCliente) {
-        this._idCliente = _idCliente;
+        this.idCliente = _idCliente;
     }
     
-        private String _nombreCliente;
+        private String nombreCliente;
 
     /**
-     * Obtiene el valor de _nombreCliente
+     * Obtiene el valor de nombreCliente
      *
-     * @return el valor de _nombreCliente
+     * @return el valor de nombreCliente
      */
     public String getNombreCliente() {
-        return _nombreCliente;
+        return nombreCliente;
     }
 
     /**
-     * Establece el valor de _nombreCliente
+     * Establece el valor de nombreCliente
      *
-     * @param nombreCliente nuevo valor para _nombreCliente
+     * @param nombreCliente nuevo valor para nombreCliente
      */
     public void setNombreCliente(String nombreCliente) {
-        this._nombreCliente = nombreCliente;
+        this.nombreCliente = nombreCliente;
     }
 
     public Cliente()
     {
-        _idCliente = 0;
-        _nombreCliente = "";
+        idCliente = 0;
+        nombreCliente = "";
     }
     
 }

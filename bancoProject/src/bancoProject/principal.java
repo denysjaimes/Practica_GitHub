@@ -20,7 +20,7 @@ public class principal {
         BufferedReader entrada = new BufferedReader(isr);
 
 
-        ArrayList coleccion = new ArrayList();
+        ArrayList coleccion_clientes = new ArrayList();
         int opcion;
 
         do {
@@ -45,7 +45,7 @@ public class principal {
                 case 0:
                     break;
                 case 1:
-                    //insertar(coleccion);
+                    insertar(coleccion);
                     break;
                 case 2:
                     //consultar(coleccion);
