@@ -33,8 +33,66 @@ public class principal {
             System.out.println("3. CREAR TIPO DE OPERACION");
             System.out.println("4. ABRIR CUENTA");
             System.out.println("5. OPERACIONES");
-            System.out.println("6. REPORTES/LISTADO");
+            System.out.println("6. REPORTES");
             System.out.println("0. SALIR");
+            try {
+                opcion = Integer.parseInt(entrada.readLine());
+            } catch (IOException | NumberFormatException e) {
+                System.out.println("=====>  ERROR " + e.getMessage());
+                opcion = 100;
+            }
+
+            switch (opcion) {
+                case 0:
+                    break;
+                case 1:
+                    insertar_cliente(coleccion_clientes);
+                    break;
+                case 2:
+                    //consultar(coleccion);
+                    break;
+                case 3:
+                    //listar(coleccion);
+                    break;
+                case 4:
+                    //eliminar(coleccion);
+                    break;
+                case 5:
+                    //eliminar(coleccion);
+                    break;
+                case 6:
+                    principal_reporte();
+                    break;
+                default:
+                    System.out.println("Opcion invalida");
+            }
+        } while (opcion != 0);
+    }
+
+    public static void main(String[] args) {
+        try {
+            new principal();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+private void principal_reporte() throws IOException {
+
+        ArrayList coleccion_clientes = new ArrayList();
+        int opcion;
+
+        do {
+            System.out.println("");
+            System.out.println("");
+            System.out.println("********* MENU CONSULTA/REPORTE ************");
+            System.out.println("1. CONSULTA DE USUARIO");
+            System.out.println("2. CONSULTA DE CUENTA");
+            System.out.println("3. LISTADO DE USUARIO");
+            System.out.println("4. LISTADO DE CUENTA POR TIPO");
+            System.out.println("5. LISTADO DE TIPO DE OPERACIONES");
+            System.out.println("6. LISTADO DE TIPO DE CUENTA");
+            System.out.println("0. SALIR");
+            
             try {
                 opcion = Integer.parseInt(entrada.readLine());
             } catch (IOException | NumberFormatException e) {
@@ -67,14 +125,6 @@ public class principal {
                     System.out.println("Opcion invalida");
             }
         } while (opcion != 0);
-    }
-
-    public static void main(String[] args) {
-        try {
-            new principal();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
     }
 
     private void insertar_cliente(ArrayList coleccion_clientes) throws IOException {
