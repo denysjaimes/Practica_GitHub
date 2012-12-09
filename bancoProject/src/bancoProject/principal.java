@@ -15,10 +15,10 @@ import java.util.ArrayList;
  */
 public class principal {
 
-    public principal() {
-        InputStreamReader isr = new InputStreamReader(System.in);
-        BufferedReader entrada = new BufferedReader(isr);
+    InputStreamReader isr = new InputStreamReader(System.in);
+    BufferedReader entrada = new BufferedReader(isr);
 
+    public principal() throws IOException {
 
         ArrayList coleccion_clientes = new ArrayList();
         int opcion;
@@ -45,7 +45,7 @@ public class principal {
                 case 0:
                     break;
                 case 1:
-                    insertar(coleccion);
+                    insertar_cliente(coleccion_clientes);
                     break;
                 case 2:
                     //consultar(coleccion);
@@ -74,5 +74,9 @@ public class principal {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    private void insertar_cliente(ArrayList coleccion_clientes) throws IOException {
+        coleccion_clientes.add(Cliente.createCliente());
     }
 }
