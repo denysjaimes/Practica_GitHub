@@ -11,9 +11,13 @@ package bancoProject;
 public class TipoCuenta {
     private long idTipocuenta;
     private String descripcion;
+    private static int cuantos=0;
     
-    TipoCuenta()
+    TipoCuenta(String _descripcion)
     {
+        descripcion = _descripcion;
+        cuantos = cuantos + 1;
+        idTipocuenta = cuantos;
     }
     public void setidTipocuenta(long id)
     {
