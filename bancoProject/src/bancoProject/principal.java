@@ -111,16 +111,16 @@ private void principal_reporte() throws IOException {
                    consulta_cuenta(coleccion);
                     break;
                 case 3:
-                    //listar(coleccion);
+                    listado_usuario(coleccion);
                     break;
                 case 4:
-                    //eliminar(coleccion);
+                    listado_cuenta_tipo(coleccion);
                     break;
                 case 5:
-                    //eliminar(coleccion);
+                   listado_operacion(coleccion);
                     break;
                 case 6:
-                    //eliminar(coleccion);
+                    listado_cuenta(coleccion);
                     break;
                 default:
                     System.out.println("Opcion invalida");
@@ -139,6 +139,18 @@ private void principal_reporte() throws IOException {
        
     }
     private void consulta_cuenta(ArrayList coleccion) throws IOException {
+       
+    }
+private void listado_usuario(ArrayList coleccion) throws IOException {
+       
+    }
+private void listado_cuenta_tipo(ArrayList coleccion) throws IOException {
+       
+    }
+private void listado_operacion(ArrayList coleccion) throws IOException {
+       
+    }
+private void listado_cuenta(ArrayList coleccion) throws IOException {
        
     }
 }
