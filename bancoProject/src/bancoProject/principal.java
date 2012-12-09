@@ -18,6 +18,7 @@ public class principal {
     InputStreamReader isr = new InputStreamReader(System.in);
     BufferedReader entrada = new BufferedReader(isr);
 
+    
     public principal() throws IOException {
 
         ArrayList coleccion_clientes = new ArrayList();
