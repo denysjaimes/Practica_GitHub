@@ -33,7 +33,7 @@ public class principal {
             System.out.println("3. CREAR TIPO DE OPERACION");
             System.out.println("4. ABRIR CUENTA");
             System.out.println("5. OPERACIONES");
-            System.out.println("6. REPORTES");
+            System.out.println("6. CONSULTA/REPORTES");
             System.out.println("0. SALIR");
             try {
                 opcion = Integer.parseInt(entrada.readLine());
@@ -78,7 +78,7 @@ public class principal {
     }
 private void principal_reporte() throws IOException {
 
-        ArrayList coleccion_clientes = new ArrayList();
+        ArrayList coleccion = new ArrayList();
         int opcion;
 
         do {
@@ -87,10 +87,10 @@ private void principal_reporte() throws IOException {
             System.out.println("********* MENU CONSULTA/REPORTE ************");
             System.out.println("1. CONSULTA DE USUARIO");
             System.out.println("2. CONSULTA DE CUENTA");
-            System.out.println("3. LISTADO DE USUARIO");
-            System.out.println("4. LISTADO DE CUENTA POR TIPO");
-            System.out.println("5. LISTADO DE TIPO DE OPERACIONES");
-            System.out.println("6. LISTADO DE TIPO DE CUENTA");
+            System.out.println("3. REPORTE DE USUARIO");
+            System.out.println("4. REPORTE DE CUENTA POR TIPO");
+            System.out.println("5. REPORTE DE TIPO DE OPERACIONES");
+            System.out.println("6. REPORTE DE TIPO DE CUENTA");
             System.out.println("0. SALIR");
             
             try {
@@ -104,22 +104,22 @@ private void principal_reporte() throws IOException {
                 case 0:
                     break;
                 case 1:
-                    insertar_cliente(coleccion_clientes);
+                    consulta_usuario(coleccion);
                     break;
                 case 2:
-                    //consultar(coleccion);
+                    consulta_cuenta(coleccion);
                     break;
                 case 3:
-                    //listar(coleccion);
+                    listado_usuario(coleccion);
                     break;
                 case 4:
-                    //eliminar(coleccion);
+                    listado_cuenta_tipo(coleccion);
                     break;
                 case 5:
-                    //eliminar(coleccion);
+                    listado_operacion(coleccion);
                     break;
                 case 6:
-                    //eliminar(coleccion);
+                    listado_cuenta(coleccion);
                     break;
                 default:
                     System.out.println("Opcion invalida");
@@ -129,5 +129,23 @@ private void principal_reporte() throws IOException {
 
     private void insertar_cliente(ArrayList coleccion_clientes) throws IOException {
         coleccion_clientes.add(Cliente.createCliente());
+    }
+    private void consulta_usuario(ArrayList coleccion) throws IOException {
+        
+    }
+     private void consulta_cuenta(ArrayList coleccion) throws IOException {
+        
+    }
+ private void listado_usuario(ArrayList coleccion) throws IOException {
+        
+    }
+  private void listado_cuenta_tipo(ArrayList coleccion) throws IOException {
+        
+    }
+ private void listado_operacion(ArrayList coleccion) throws IOException {
+        
+    }
+  private void listado_cuenta(ArrayList coleccion) throws IOException {
+        
     }
 }
